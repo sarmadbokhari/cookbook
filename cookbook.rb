@@ -19,7 +19,9 @@ class Cookbook
   end
 
   def recipe_ingredients
-
+    recipes.each do |x|
+      puts "These are the ingredients for the #{x.title}: #{x.ingredients}"
+    end
   end
 
 end
