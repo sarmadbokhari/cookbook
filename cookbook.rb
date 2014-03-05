@@ -1,6 +1,6 @@
 class Cookbook
   attr_accessor :title
-  attr_reader :recipes
+  attr_accessor :recipes
 
   def initialize(title)
     @title = title
@@ -14,8 +14,8 @@ class Cookbook
 end
 
 class Recipe
-  attr_reader :title
-  attr_writer :steps
+  attr_accessor :title
+  attr_accessor :steps
   attr_accessor :ingredients
 
   def initialize(title, ingredients, steps)
