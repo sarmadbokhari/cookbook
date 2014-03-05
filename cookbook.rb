@@ -24,6 +24,12 @@ class Cookbook
     end
   end
 
+  def print_recipe
+    recipes.each do |x|
+      puts "#{x.title} has the following ingredients: #{x.ingredients}, and the following steps: #{x.steps}"
+    end
+  end
+
 end
 
 class Recipe
