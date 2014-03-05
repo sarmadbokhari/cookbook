@@ -9,6 +9,17 @@ class Cookbook
 
   def add_recipe(new_recipe)
     @recipes << new_recipe
+    puts "Added a recipe to the collection: #{new_recipe.title}"
+  end
+
+  def recipe_titles
+    recipes.each do |x|
+      puts x.title
+    end
+  end
+
+  def recipe_ingredients
+
   end
 
 end
